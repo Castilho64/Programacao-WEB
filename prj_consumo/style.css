@@ -1,0 +1,163 @@
+/*CSS feito em realação aos meus conhecimentos de outras aulas. Feito para facilitar e ter uma melhor visão do Projeto funcionando.*/
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f3f4f6;
+    color: #1f2937;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 24px 16px;
+}
+
+h1 {
+    margin: 0;
+}
+
+.sub {
+    margin: 4px 0 20px;
+    color: #6b7280;
+}
+
+/* Formulário */
+.filtros {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.filtros input {
+    padding: 8px 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+}
+
+.filtros input[name="q"] {
+    flex: 1;
+    min-width: 200px;
+}
+
+.filtros button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    background: #2563eb;
+    color: #fff;
+    cursor: pointer;
+}
+
+.filtros a {
+    align-self: center;
+    color: #6b7280;
+}
+
+/* Status da requisição */
+.status {
+    padding: 12px 14px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    border-left: 5px solid;
+}
+
+.status.ok {
+    background: #dcfce7;
+    border-color: #16a34a;
+}
+
+.status.erro {
+    background: #fee2e2;
+    border-color: #dc2626;
+}
+
+.codigo {
+    float: right;
+    font-weight: bold;
+}
+
+.endpoint {
+    margin-top: 6px;
+    font-family: monospace;
+    font-size: 13px;
+    color: #4b5563;
+}
+
+/* Cards */
+.grade {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 16px;
+}
+
+.card {
+    background: #fff;
+    padding: 14px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%;
+    height: 160px;
+    object-fit: contain;
+    background: #f9fafb;
+    border-radius: 6px;
+}
+
+.card h2 {
+    font-size: 16px;
+    margin: 10px 0 4px;
+}
+
+.cat {
+    margin: 0;
+    font-size: 13px;
+    color: #6b7280;
+    text-transform: capitalize;
+}
+
+.preco {
+    font-weight: bold;
+    color: #16a34a;
+}
+
+.card ul {
+    padding-left: 18px;
+    font-size: 14px;
+}
+
+.card a {
+    color: #2563eb;
+}
+
+.vazio {
+    text-align: center;
+    color: #6b7280;
+}
+
+/* JSON bruto */
+details {
+    margin-top: 24px;
+}
+
+summary {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+pre {
+    background: #111827;
+    color: #e5e7eb;
+    padding: 14px;
+    border-radius: 6px;
+    overflow-x: auto;
+    font-size: 13px;
+}
